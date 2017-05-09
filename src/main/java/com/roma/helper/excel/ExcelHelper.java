@@ -9,8 +9,8 @@ import java.util.List;
  */
 public class ExcelHelper implements Helper {
 
-    private static ExcelReader reader;
-    private static ExcelWriter writer;
+    private volatile static ExcelReader reader;
+    private volatile static ExcelWriter writer;
 
     private ExcelHelper() {}
 
